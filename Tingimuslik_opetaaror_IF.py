@@ -73,7 +73,52 @@ try:
         print(hind)
 except:
     print("Error")
+#try:
+#    a=float(input("Kui pikk te olete? ->  "))
+#    if a<=0:
+#        print("Error")
+#    else:
+#        if a<=150:
+#            print("Teie pikkus on lühike.")
+#        elif a>150 and a<=180:
+#            print("Teie pikkus on keskmine.")
+#        elif a>=180:
+#            print("Teie pikkus on pikk.")
+#except:
+#    print("Vale andmetüüp")
 
+#5
+
+
+#n=int(input("Mitu toa korteris? ->"))
+#for i in range(1,n+1,1): 
+#    t=float(input(f"{i}. toa Temperatuur: "))
+#    if t>18: 
+#        print("Soe")
+#    else: 
+#        print("Külm")
+
+
+from random import *
+
+p=k=l=0
+kogus=randint(1,20)
+print("Kokku on",kogus,"inimest")
+while kogus>0:
+    kogus-=1
+    pikkus=randint(56,256)
+    if pikkus>178:
+        print("Pikk")
+        p+=1
+    elif pikkus>155 and pikkus<=178:
+        print("Keskmine")
+        k+=1
+    else:
+        print("Lühike")
+        l+=1
+print(f"Pikka kasvu {p} inimest")    
+print(f"Keskmine kasvu {k} inimest")
+print(f"Lühike kasvu {l} inimest")
 
     #8
 
@@ -141,6 +186,24 @@ except:
 #except:
 #    print("Value Error")
 
+
+a=0
+b=1
+while a!=b:
+    while True:
+        try:
+            a=float(input("Utle pool a "))
+            break
+        except:
+            print("Sisesta veel kord")
+    while True:
+        try:
+            b=float(input("Utle pool b "))
+            break             
+        except: 
+            print("Sisesta veel kord")
+    if a!=b: print("Andmetüüb on ok, vaid see ei ole ruud!")
+print(f"See on ruud. Ruudu lülg võrdub {a}")
 #10
 
 #try:
